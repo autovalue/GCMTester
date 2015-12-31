@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GCMTester</string>
+
+    <string name="apikey_hint">Server API Key</string>
+    <string name="token_hint">Token</string>
+    <string name="message_hint">Example: \"message\" : \"GCMTester\"</string>
+    <string name="message_default">\"message\" : \"GCMTester\"</string>
+
+</resources>
