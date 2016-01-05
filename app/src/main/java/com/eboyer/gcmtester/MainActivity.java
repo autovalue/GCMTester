@@ -65,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
 
         final TextView textViewResponse=(TextView)findViewById(R.id.textViewResponse);
         textViewResponse.setText("");
-        mSendButton.setEnabled(false);
 
         final String apiKey = ((EditText)findViewById(R.id.editTextAPIKey)).getText().toString();
         final String token = ((EditText)findViewById(R.id.editTextToken)).getText().toString();
@@ -105,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
                 return headers;
             }
         };
+        mSendButton.setEnabled(false);
         VolleySingleton.getInstance(this).addToRequestQueue(JsonObjectRequest);
     }
 
